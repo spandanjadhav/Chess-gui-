@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Jockey+One:400|Inter:400");
+
+:root {
+    --font-family-inter: "Inter";
+    --font-family-jockey_one: "Jockey One";
+}
+
+body {
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.login-page, .signup-page {
+    background-color: #ead5c9;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-inter);
+    font-weight: 600;
+}
+
+.signup-page {
+    position: relative;
+}
+
+.login-btn, .sign-up-btn {
+    color: white;
+    background-color: #efd4ff;
+    border: 1px solid black;
+    font-family: var(--font-family-jockey_one);
+    font-size: 40px;
+    width: 125px;
+}
+
+.login-content, .signup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo-container {
+    background-color: #e3c3b1;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    padding: 20px;
+}
+
+.logo {
+    width: 700px;
+}
+
+.username, .password {
+    padding: 10px;
+}
+
+.username-container, .password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.username-container {
+    margin-top: 50px;
+}
+
+.password-container {
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+}
+
+.more-bottom-padding {
+    padding-bottom: 15px;
+}
