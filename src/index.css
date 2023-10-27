@@ -92,3 +92,106 @@ input[type="text"] {
 .more-bottom-padding {
     padding-bottom: 15px;
 }
+/* css for third page  */
+.third-page {
+    position: relative;
+    background-color: #F5F5DC;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.custom-input {
+    border: 1px solid black;
+    background-color: pink;
+    color: white;
+    padding: 10px 15px;
+    font-size: 26px;
+    width: 450px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px; /* some space after the input box */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10%; /* 10% padding on the left to position images */
+    margin-top: 100px;
+}
+
+.chess-image {
+    width: 40%; 
+    max-width: 460px;
+    margin-bottom: 90px; /* some space between images */
+}
+
+.content-container {
+    display: flex;
+    width: 80%;  /* Adjust this to control the combined width of images and input boxes */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;  /* Creates space between the two input boxes */
+}
+
+.main-input {
+    margin-bottom: 30px;  /* Adds some space between the main input box and the content below */
+}
+
+.bottom-input {
+    position: absolute;  /* Take it out of the normal document flow */
+    bottom: 20px;        /* Position it 20px from the bottom, adjust this as needed */
+    left: 50%;           /* Center the input box horizontally */
+    transform: translateX(-50%); /* Adjusts for the width of the input box, keeping it centered */
+    color: black;
+}
+.begin-game-btn {
+    background-color: pink;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;  /* For a smooth hover effect */
+
+    /* Remove the default button styles */
+    border-radius: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.begin-game-btn:hover {
+    background-color: #d1b7d8;  /* Slightly darker lavender for hover */
+}
+/* fourth page css */
+.fourth-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;  /* Positions the input boxes to the right side of the page */
+    padding: 20px;          /* Provides some space on all sides */
+    gap: 20px;              /* Space between each input box */
+}
+
+.pink-input {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: center;
+    cursor: default;       /* Makes the mouse cursor remain default, not the text selection cursor */
+    outline: none;         /* Removes the default focus outline */
+}
