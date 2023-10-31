@@ -22,6 +22,8 @@ export default function SignUp() {
                     <input type="text" name="" id="passwordInput" className="password-input"/>
                 </div>
                 <SignUpButton/>
+                
+
             </div>
         </div>
     )

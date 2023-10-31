@@ -1,8 +1,10 @@
 import React from 'react';
+import BackButton from "../assets/back-button.svg"
 
 const PlayGame = () => {
     return (
         <div className="fourth-page">
+            
             <input 
                 type="text" 
                 className="pink-input" 

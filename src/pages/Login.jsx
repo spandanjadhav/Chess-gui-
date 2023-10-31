@@ -1,6 +1,9 @@
 import SignUpButton from "../components/SignUpButton"
 import LoginButton from "../components/LoginButton"
 import logo from "../assets/pixelpawns-logo.svg"
+
+import { Link } from 'react-router-dom';
+
 import "../index.css"
 
 export default function Login() {
@@ -19,9 +22,15 @@ export default function Login() {
                     <label htmlFor="passwordInput" className="password">PASSWORD</label>
                     <input type="text" name="" id="passwordInput" className="password-input"/>
                 </div>
-                <LoginButton/>
+                {/* <LoginButton/>
                 <p>DON'T HAVE AN ACCOUNT? SIGN UP</p>
-                <SignUpButton/>
+                <SignUpButton/> */}
+                <Link to="/choosegame"> {/* Link to the ChooseGame component */}
+                    <LoginButton />
+                </Link>
+                <p>DON'T HAVE AN ACCOUNT? SIGN UP</p>
+                <SignUpButton />
+
             </div>
         </div>
     )

@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from "../assets/back-button.svg"
 
 const ChooseGame = () => {
     return (
+        
         <div className="third-page">
+        <Link to="/">
+                    <button className="back-btn">
+                        <img className="back-btn-img" src={BackButton} alt="back button"/>
+                    </button>
+                </Link>
             <input 
                 type="text" 
                 className="custom-input main-input" 
@@ -28,17 +35,17 @@ const ChooseGame = () => {
                         value="PASS AND PLAY"
                         readOnly
                     />
+                     <Link to="/playgame">
                     <input 
                         type="text" 
                         className="custom-input bottom-input" 
                         value="BEGIN GAME"
                         readOnly
                     />
+                    </Link>
                 </div>
             </div>
-            <Link to="/fourth">
-                <button className="begin-game-btn">BEGIN GAME</button>
-            </Link>
+            
         </div>
     );
 };
