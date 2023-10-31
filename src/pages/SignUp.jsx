@@ -15,11 +15,11 @@ export default function SignUp() {
                 <h1>CREATE AN ACCOUNT</h1>
                 <div className="username-container">
                     <label htmlFor="userNameInput" className="username">USERNAME</label>
-                    <input type="text" name="" id="userNameInput" className="username-input"/>
+                    <input type="text" name="userNameInput" id="userNameInput" className="username-input"/>
                 </div>
                 <div className="password-container more-bottom-padding">
                     <label htmlFor="passwordInput" className="password">PASSWORD</label>
-                    <input type="text" name="" id="passwordInput" className="password-input"/>
+                    <input type="text" name="passwordInput" id="passwordInput" className="password-input"/>
                 </div>
                 <SignUpButton/>
             </div>

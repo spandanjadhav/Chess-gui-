@@ -13,11 +13,11 @@ export default function Login() {
                 </div>
                 <div className="username-container">
                     <label htmlFor="userNameInput" className="username">USERNAME</label>
-                    <input type="text" name="" id="userNameInput" className="username-input"/>
+                    <input type="text" name="userNameInput" id="userNameInput" className="username-input"/>
                 </div>
                 <div className="password-container">
                     <label htmlFor="passwordInput" className="password">PASSWORD</label>
-                    <input type="text" name="" id="passwordInput" className="password-input"/>
+                    <input type="text" name="passwordInput" id="passwordInput" className="password-input"/>
                 </div>
                 <LoginButton/>
                 <p>DON'T HAVE AN ACCOUNT? SIGN UP</p>
