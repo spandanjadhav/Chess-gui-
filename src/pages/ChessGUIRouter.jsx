@@ -13,6 +13,5 @@ export default function ChessGUIRouter() {
             <Route path="/playgame" element={<PlayGame/>}/> 
             <Route path="/*" element={<Login/>}/>
         </Routes>
-    
     </BrowserRouter>
 }
